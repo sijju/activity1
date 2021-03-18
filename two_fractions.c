@@ -1,4 +1,3 @@
-
 #include<stdio.h>
 typedef struct
     {
@@ -48,15 +47,15 @@ typedef struct
     }
  }    
  
-   void display(Fraction add)
+   void display(Fraction f1,Fraction f2,Fraction add)
    {
-     printf("The addition of two fractions is %d/%d",add.num,add.deno);
+     printf("The addition of two fractions %d/%d+%d/%d is  %d/%d",f1.num,f1.deno,f2.num,f2.deno,add.num,add.deno);
    }
     int main()
     {
      Fraction f1 =input(1);
      Fraction f2 =input(2);
      Fraction result = sum(f1, f2);
-     display(result);  
+     display(f1,f2,result);  
      return 0;
     }
